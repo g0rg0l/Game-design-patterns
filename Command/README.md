@@ -144,4 +144,13 @@ private:
 };
 ```
 
+```c++
+...
+if (engine.isStopped())
+{
+  commandInvoker.sendCommand(new SendMessageCommand("game is closing."));
+}
+...
+```
+
 Результат реализации паттерна Command выложен в дополнение к этому тексту - @g0rg0l.
